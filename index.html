@@ -4,12 +4,12 @@
   
 
 
-   <!-- SEO / EEAT Meta Tags -->
+ <!-- SEO / EEAT Meta Tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>zkSync Airdrop — How to Check Eligibility, Claim Safely, Avoid Scams, Deadlines, and Proof on Explorer (2026)</title>
-<meta name="description" content="zkSync Airdrop (2026) complete guide: what it is, how to check eligibility, how to claim safely, official sources, deadlines windows, wallet setup (RPC/chain ID), proof on explorers, tax/security notes, and troubleshooting for missing tokens or failed claims.">
+<title>zkSync Airdrop — What It Is, Rewards, Eligibility, How to Check & Claim + Explorer Proof (2026)</title>
+<meta name="description" content="zkSync Airdrop (2026) practical guide: what airdrops are, rewards explained, eligibility logic (snapshots, scoring, anti-sybil), how to check eligibility, how to claim step-by-step, how to verify on zkSync Explorer, deadlines/claim windows, and troubleshooting for missing tokens or failed claims.">
 <meta name="author" content="Crypto Finance Experts">
 <link rel="canonical" href="https://zksync-airdrop.example.com/">
 
@@ -19,15 +19,15 @@
 <!-- Open Graph -->
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://zksync-airdrop.example.com/">
-<meta property="og:title" content="zkSync Airdrop — Eligibility, Safe Claim, Deadlines, Explorer Proof & Scam Defense (2026)">
-<meta property="og:description" content="Everything about zkSync airdrops: how to verify official announcements, check eligibility, claim safely, avoid phishing, and confirm on-chain on explorers.">
+<meta property="og:title" content="zkSync Airdrop — Rewards, Eligibility, How to Check & Claim (2026)">
+<meta property="og:description" content="Complete zkSync Airdrop guide: rewards, eligibility, how to check and claim, deadlines, and explorer verification (proof).">
 <meta property="og:image" content="zksync.png">
 
 <!-- Twitter Card -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://zksync-airdrop.example.com/">
-<meta property="twitter:title" content="zkSync Airdrop — How to Check Eligibility & Claim Safely (2026)">
-<meta property="twitter:description" content="Step-by-step: official sources → eligibility → claim → verify on explorer. Scam patterns and troubleshooting included.">
+<meta property="twitter:title" content="zkSync Airdrop — What It Is + How to Claim (2026)">
+<meta property="twitter:description" content="Plain-language guide: rewards, eligibility, how to check and claim, and how to verify on explorer.">
 <meta property="twitter:image" content="zksync.png">
 
 <style>
@@ -103,6 +103,7 @@
   .lead{font-size:1.125rem; color:#0B1220}
   .muted{color:var(--muted)}
   .muted-2{color:var(--muted-2)}
+  .tiny{font-size:.92rem}
 
   header.hero{
     padding: clamp(2rem,6vw,4rem) 0;
@@ -203,7 +204,7 @@
     transform: translateY(-2px);
     box-shadow:
       0 32px 78px rgba(37,99,255,.30),
-      0 0 0 12px rgba(37,99,255,.14);
+        0 0 0 12px rgba(37,99,255,.14);
   }
   .cta:active{transform: translateY(0px); filter:brightness(.99);}
 
@@ -349,11 +350,16 @@
     box-shadow: 0 12px 26px rgba(7,16,33,.10);
   }
 
-  .checklist{
-    margin:.75rem 0 0;
-    padding-left:1.1rem;
+  .pillrow{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:.6rem}
+  .pill{
+    border:1px solid rgba(37,99,255,.20);
+    background:rgba(37,99,255,.06);
+    color:#0B1220;
+    padding:.35rem .6rem;
+    border-radius:999px;
+    font-weight:950;
+    font-size:.9rem;
   }
-  .checklist li{margin:.35rem 0}
 
   .faq-item{border-bottom:1px solid var(--line); padding: .9rem 0}
   .faq-button{
@@ -382,16 +388,16 @@
       <div class="brand-row">
         <img class="brand-logo" src="zklogo.png" alt="zkSync logo">
         <div>
-          <div class="muted" style="font-weight:950; letter-spacing:.2px;">Complete How-To Guide</div>
-          <div class="muted-2" style="font-size:.95rem;">Eligibility • Claim • Scams • Deadlines • Explorer Proof • Troubleshooting</div>
+          <div class="muted" style="font-weight:950; letter-spacing:.2px;">Operational Guide</div>
+          <div class="muted-2" style="font-size:.95rem;">What Is • Rewards • Eligibility • How To Check • How To Claim • Explorer Proof</div>
         </div>
       </div>
 
       <h1>zkSync Airdrop</h1>
       <p class="lead">
-        This page explains <strong>zkSync airdrops</strong> in plain language: what an airdrop is, <strong>how to</strong> check eligibility,
-        <strong>how to</strong> claim safely, how to verify the result on-chain, and how to avoid the scams that drain wallets.
-        If you’re “Vasya” and you just want clear steps — follow the workflow below and use explorer proof as your truth source.
+        A plain-language, security-first guide to <strong>zkSync Airdrop</strong>: what it is, how rewards are calculated,
+        how eligibility usually works (snapshots + scoring + anti-sybil), and exactly <strong>how to</strong> check and claim,
+        then prove the result on-chain using the explorer.
       </p>
 
       <!-- ONE CENTERED BUTTON (BIGGER + NO LINK) -->
@@ -402,7 +408,14 @@
       </div>
 
       <div class="note">
-        <strong>Safety first:</strong> a legit airdrop never needs your seed phrase/private key. Start from official zkSync channels only and verify the domain before connecting a wallet.
+        <strong>Quick rule:</strong> eligibility is address-based. Always verify outcomes with <em>explorer proof</em> (tx hash → status → token transfer → contract).
+      </div>
+
+      <div class="pillrow" aria-label="Key takeaways">
+        <span class="pill">Beginner-friendly</span>
+        <span class="pill">Step-by-step</span>
+        <span class="pill">Explorer-first</span>
+        <span class="pill">No fluff</span>
       </div>
     </div>
 
@@ -414,34 +427,34 @@
 
 <section class="step-guide" aria-labelledby="how-to">
   <div class="container">
-    <h2 id="how-to">How to Claim zkSync Airdrop Safely: Official Source → Eligibility → Claim → Verify → Clean Up</h2>
+    <h2 id="how-to">How to Claim zkSync Airdrop: Official Source → Eligibility → Claim → Verify → Post-Claim Hygiene</h2>
     <div class="steps" role="list">
       <article class="step" role="listitem">
         <div class="icon">①</div>
-        <h3>Find the official announcement (don’t trust ads/DMs)</h3>
+        <h3>Start from official links (source of truth)</h3>
         <p>
-          Use zkSync’s official website/docs and official social channels. Avoid sponsored search results and random “eligibility check” sites.
+          Use zkSync official site/docs/portal links. Don’t search “claim now” and don’t trust DMs. This prevents almost all mistakes.
         </p>
       </article>
       <article class="step" role="listitem">
         <div class="icon">②</div>
-        <h3>Check eligibility with the correct wallet address</h3>
+        <h3>Check eligibility on the correct wallet address</h3>
         <p>
-          Eligibility is tied to an address. Connect the right account, confirm the address in your wallet popup, and don’t rush.
+          Eligibility is tied to an address. Connect the wallet you actually used and confirm the address in the wallet popup.
         </p>
       </article>
       <article class="step" role="listitem">
         <div class="icon">③</div>
-        <h3>Claim and read what you sign</h3>
+        <h3>Claim (read what you sign)</h3>
         <p>
-          Claims usually involve a transaction or signature. Be suspicious of unlimited approvals, “permit” drains, or strange contract names.
+          Claims are usually one transaction (and sometimes a signature). If you see weird approvals or unexpected token spends, stop.
         </p>
       </article>
       <article class="step" role="listitem">
         <div class="icon">④</div>
-        <h3>Verify on explorer and clean up approvals</h3>
+        <h3>Verify on explorer + clean up</h3>
         <p>
-          Confirm tx success on the explorer and verify the token contract. After the claim, review allowances and revoke anything unnecessary.
+          Explorer proof is final. After claiming, review allowances and revoke anything you don’t need.
         </p>
       </article>
     </div>
@@ -453,205 +466,250 @@
   <section class="card toc" aria-label="Table of Contents">
     <strong>On this page (zkSync Airdrop):</strong>
     <ul>
-      <li><a href="#what-is">What is a zkSync airdrop (in simple words)</a></li>
-      <li><a href="#types">Types of airdrops: claim vs auto-drop vs quests</a></li>
-      <li><a href="#eligibility">Eligibility: how it’s usually decided</a></li>
-      <li><a href="#how-check">How to check eligibility safely (step-by-step)</a></li>
-      <li><a href="#how-claim">How to claim safely (step-by-step)</a></li>
-      <li><a href="#deadlines">Deadlines, snapshots, claim windows (what they mean)</a></li>
+      <li><a href="#what-is">What is zkSync Airdrop?</a></li>
+      <li><a href="#rewards">Rewards: how distributions usually work</a></li>
+      <li><a href="#eligibility">Eligibility: snapshots, scoring, anti-sybil (explained simply)</a></li>
+      <li><a href="#how-check">How to check eligibility (step-by-step)</a></li>
+      <li><a href="#how-claim">How to claim (step-by-step)</a></li>
+      <li><a href="#deadlines">Deadlines & claim windows (avoid confusion)</a></li>
       <li><a href="#wallet">Wallet setup: RPC, chain ID, explorer</a></li>
-      <li><a href="#proof">Explorer proof: how to confirm you received tokens</a></li>
-      <li><a href="#scams">Scams: patterns + what to do if you clicked</a></li>
-      <li><a href="#troubleshooting">Troubleshooting (most common problems)</a></li>
+      <li><a href="#proof">Explorer proof: verify you received tokens</a></li>
+      <li><a href="#best-practices">Best practices: safe claiming checklist</a></li>
+      <li><a href="#troubleshooting">Troubleshooting</a></li>
       <li><a href="#eeat">Authoritative sources (EEAT)</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
   </section>
 
   <section class="card" id="what-is">
-    <h2>What Is a zkSync Airdrop? (Simple Explanation)</h2>
+    <h2>What Is zkSync Airdrop?</h2>
     <p>
-      An <strong>airdrop</strong> is when a project distributes tokens to wallet addresses for free (or for minimal gas), usually to reward early users,
-      community members, or ecosystem participation. A “<strong>zkSync airdrop</strong>” means the distribution is related to the zkSync ecosystem
-      (for example: zkSync Era usage, bridging, trading, providing liquidity, or participating in campaigns).
+      A <strong>zkSync airdrop</strong> is a token distribution connected to the zkSync ecosystem. Wallets can receive tokens for prior activity
+      (using apps, bridging, swapping, providing liquidity, participating in campaigns) before a defined time checkpoint called a <strong>snapshot</strong>.
     </p>
     <p>
-      The important part: <strong>your wallet address is the identity</strong>. There is no “username.” If you used multiple wallets, eligibility can differ.
-      And a legit airdrop always has an <strong>official announcement</strong> plus an <strong>on-chain proof</strong> you can verify with an explorer.
+      Most confusion comes from one thing: airdrops are <strong>address-based</strong>. There is no username. If you used multiple wallets, each wallet can have a different result.
     </p>
 
-    <div class="note">
-      <strong>For Vasya:</strong> if you do 2 things only — (1) open official source, (2) verify on explorer — you avoid most airdrop scams.
-    </div>
-  </section>
-
-  <section class="card" id="types">
-    <h2>Types of zkSync Airdrops: Claim vs Auto-Drop vs Campaign Rewards</h2>
-    <div class="callout-grid">
-      <div class="mini">
-        <h3>1) Claim airdrop (you must press “Claim”)</h3>
-        <p class="muted">
-          You connect a wallet to an official page, confirm eligibility, then execute a claim transaction. You pay gas (usually small).
-        </p>
-        <ul class="checklist">
-          <li>Pros: clear workflow, you control timing</li>
-          <li>Risks: phishing pages, malicious approvals</li>
+    <div class="callout-grid" role="list">
+      <div class="mini" role="listitem">
+        <h3>What an airdrop is (operationally)</h3>
+        <ul>
+          <li>Eligibility computed from wallet activity</li>
+          <li>Allocation is assigned to eligible addresses</li>
+          <li>Tokens are claimed (or auto-distributed)</li>
+          <li>Explorer shows proof of transfer/mint</li>
         </ul>
       </div>
-
-      <div class="mini">
-        <h3>2) Auto-drop (tokens sent automatically)</h3>
-        <p class="muted">
-          Tokens appear in your wallet automatically (no claim). You still must verify the token contract before interacting.
-        </p>
-        <ul class="checklist">
-          <li>Pros: no claim UI risk</li>
-          <li>Risks: fake lookalike tokens</li>
+      <div class="mini" role="listitem">
+        <h3>What it is NOT</h3>
+        <ul>
+          <li>Not “guaranteed” for everyone who used zkSync once</li>
+          <li>Not a reason to share seed phrases (never)</li>
+          <li>Not something you can “fix” with random tools</li>
         </ul>
       </div>
     </div>
 
-    <div class="mini" style="margin-top:1rem;">
-      <h3>3) Campaign / quests / points → distribution</h3>
-      <p class="muted">
-        Some programs use tasks (bridges, swaps, LP, etc.) to accumulate points. Later there may be a distribution.
-        These are the most confusing because you’ll see many unofficial trackers — treat them as “informational only,” not authoritative.
-      </p>
+    <div class="note">
+      <strong>For beginners:</strong> use an explorer as your truth source. If a UI says “claimed” but explorer shows no token transfer, treat it as “not claimed yet.”
     </div>
 
-    <div class="note">
-      <strong>Rule:</strong> only zkSync’s official sources can confirm whether a distribution is real and what the claim window is.
+    <div class="content-media">
+      <img class="content-img" src="zksync2.png" alt="zkSync airdrop overview image">
     </div>
   </section>
 
-  <section class="card" id="eligibility">
-    <h2>Eligibility: How zkSync Airdrop Criteria Usually Works</h2>
+  <section class="card" id="rewards">
+    <h2>zkSync Airdrop Rewards: How Distributions Usually Work</h2>
     <p>
-      Each distribution has its own rules, but eligibility typically comes from one or more of these signals:
-    </p>
-    <ul>
-      <li><strong>Activity:</strong> on-chain usage like swaps, bridging, transfers, DeFi interactions.</li>
-      <li><strong>Time:</strong> actions done before a snapshot date/time.</li>
-      <li><strong>Quality filters:</strong> anti-sybil rules that try to exclude fake farms (many wallets controlled by one person).</li>
-      <li><strong>Participation:</strong> official campaigns, governance, community programs.</li>
-    </ul>
-    <p>
-      That’s why you’ll often see: “I used zkSync but I’m not eligible.” It can happen if actions were after the snapshot, too minimal,
-      or flagged by anti-sybil rules. The only reliable answer is the official eligibility checker (if provided).
+      Rewards can arrive in different formats depending on how the distribution is designed. This section helps you understand what you’re receiving and how to verify it.
     </p>
 
-    <div class="note">
-      <strong>Important:</strong> “unofficial eligibility tools” are a common phishing vector. Use them only if they are widely reputable and never connect a wallet unless it’s official.
-    </div>
-  </section>
-
-  <section class="card" id="how-check">
-    <h2>How to Check zkSync Airdrop Eligibility Safely (Step-by-Step)</h2>
-    <ol>
-      <li><strong>Find the official announcement</strong> on zkSync’s official website/docs and official social channels.</li>
-      <li><strong>Open the official claim/eligibility page</strong> from the official link (don’t type random URLs).</li>
-      <li><strong>Connect your wallet</strong> and confirm the address shown matches your intended wallet.</li>
-      <li><strong>Read the eligibility result</strong> (eligible/not eligible/needs proof/etc.).</li>
-      <li><strong>If eligible:</strong> proceed to claim steps below.</li>
-      <li><strong>If not eligible:</strong> don’t try random “fix” sites. Re-check official rules (snapshot/criteria) and stop.</li>
-    </ol>
-
-    <table aria-label="Eligibility check: what to verify">
+    <table aria-label="Reward types and how they appear">
       <thead>
         <tr>
-          <th>What to verify</th>
-          <th>How</th>
-          <th>Why</th>
+          <th>Reward format</th>
+          <th>What you receive</th>
+          <th>How it shows up</th>
         </tr>
       </thead>
       <tbody>
         <tr class="highlight">
-          <td>Domain is official</td>
-          <td>Open from official zkSync announcement links</td>
-          <td>Stops phishing clones</td>
+          <td>Claimable tokens</td>
+          <td>A fixed token amount assigned to your address</td>
+          <td>Claim tx → explorer shows token transfer/mint</td>
         </tr>
         <tr>
-          <td>Wallet address is correct</td>
-          <td>Compare first/last characters, hardware wallet screen if used</td>
-          <td>Stops “wrong wallet” confusion</td>
+          <td>Auto-distributed tokens</td>
+          <td>Tokens sent to your wallet automatically</td>
+          <td>Explorer shows incoming transfer (no claim UI)</td>
         </tr>
         <tr class="highlight">
-          <td>No strange permissions</td>
-          <td>Claim should not request unlimited approvals to random tokens</td>
-          <td>Stops drainers</td>
+          <td>Points → tokens</td>
+          <td>Points or campaign score converted into allocation</td>
+          <td>Allocation appears when distribution is published</td>
+        </tr>
+        <tr>
+          <td>Partner/ecosystem rewards</td>
+          <td>Tokens from projects in the ecosystem</td>
+          <td>Separate claim pages and separate contracts</td>
         </tr>
       </tbody>
     </table>
 
     <div class="note">
-      <strong>Tip:</strong> use a separate browser profile for airdrops. No extensions except wallet + security tools.
+      <strong>Reality check:</strong> high “estimated value” screenshots are not proof. Only an on-chain transfer from an official token contract is proof.
+    </div>
+  </section>
+
+  <section class="card" id="eligibility">
+    <h2>Eligibility Explained: Snapshots, Scoring, and Anti-Sybil (Plain Language)</h2>
+    <p>
+      Eligibility is typically computed using a combination of timing + activity + quality filters. While exact rules differ by distribution, the logic usually includes:
+    </p>
+
+    <table aria-label="Eligibility components">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>What it means</th>
+          <th>Why it exists</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>Snapshot</td>
+          <td>A cutoff time when your past activity is measured</td>
+          <td>Stops “last-minute farming” after announcement</td>
+        </tr>
+        <tr>
+          <td>Activity scoring</td>
+          <td>Actions can be weighted (not all tx are equal)</td>
+          <td>Rewards meaningful usage vs spam transactions</td>
+        </tr>
+        <tr class="highlight">
+          <td>Anti-sybil filters</td>
+          <td>Heuristics to detect many wallets controlled by one actor</td>
+          <td>Reduces fake farming and improves fairness</td>
+        </tr>
+        <tr>
+          <td>Exclusions</td>
+          <td>Some behaviors can be excluded/penalized</td>
+          <td>Discourages manipulative patterns</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-grid">
+      <div class="mini">
+        <h3>Common “I’m confused” scenarios</h3>
+        <ul>
+          <li>Used zkSync but actions were after snapshot</li>
+          <li>Used a different wallet than the one connected</li>
+          <li>Wallet flagged by anti-sybil filters</li>
+          <li>Allocation exists but wallet UI doesn’t show token</li>
+        </ul>
+      </div>
+      <div class="mini">
+        <h3>What you should do first</h3>
+        <ul>
+          <li>Confirm your address (copy/paste exact)</li>
+          <li>Use the official checker (if provided)</li>
+          <li>Use explorer to verify claim/transfer</li>
+          <li>Ignore unofficial “fixers” and “boosters”</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Key idea:</strong> anti-sybil filters are why “same actions” can lead to different outcomes. It’s not always a bug.
+    </div>
+  </section>
+
+  <section class="card" id="how-check">
+    <h2>How to Check zkSync Airdrop Eligibility (Step-by-Step)</h2>
+    <ol>
+      <li><strong>Open an official zkSync link</strong> (official website/docs/portal).</li>
+      <li><strong>Navigate to the eligibility/claim page</strong> linked from official sources.</li>
+      <li><strong>Connect your wallet</strong> and confirm you selected the correct account.</li>
+      <li><strong>Read the eligibility result</strong>: eligible/not eligible/needs action.</li>
+      <li><strong>Save proof</strong>: take note of allocation, eligibility page state, and any official claim contract reference.</li>
+    </ol>
+
+    <div class="note">
+      <strong>Beginner tip:</strong> if you used multiple wallets, check each one separately. Eligibility is not “profile-based.”
     </div>
   </section>
 
   <section class="card" id="how-claim">
-    <h2>How to Claim zkSync Airdrop Safely (Step-by-Step)</h2>
+    <h2>How to Claim zkSync Airdrop (Step-by-Step How To)</h2>
+    <p>
+      A safe claim is a predictable workflow. Don’t rush. Most problems are preventable with 2 checks: the contract you interact with + the token contract you receive.
+    </p>
+
     <ol>
-      <li><strong>Prepare gas:</strong> ensure you have enough ETH for fees on the chain where the claim happens.</li>
-      <li><strong>Connect wallet on official page</strong> and confirm address.</li>
-      <li><strong>Click Claim</strong> and read the wallet prompt carefully.</li>
-      <li><strong>Confirm the transaction</strong> and save the <span class="inline-code">tx hash</span>.</li>
-      <li><strong>Verify on explorer:</strong> status success + correct claim contract + correct token contract.</li>
-      <li><strong>Add token only from explorer contract</strong> if it doesn’t show automatically.</li>
-      <li><strong>Clean up allowances:</strong> revoke approvals you don’t need.</li>
+      <li><strong>Prepare gas:</strong> keep enough ETH for fees on the chain where the claim happens.</li>
+      <li><strong>Open the official claim page</strong> and connect your wallet.</li>
+      <li><strong>Click “Claim”</strong> and carefully read the wallet prompt.</li>
+      <li><strong>Confirm the transaction</strong> and copy the <span class="inline-code">tx hash</span>.</li>
+      <li><strong>Verify on explorer</strong>: status success + token transfer event.</li>
+      <li><strong>Verify token contract</strong>: open the token contract page and confirm it’s the official one.</li>
+      <li><strong>Post-claim hygiene</strong>: review allowances and revoke what you don’t need.</li>
     </ol>
 
     <div class="callout-grid">
       <div class="mini">
-        <h3>What you SHOULD see in a normal claim</h3>
-        <ul class="checklist">
-          <li>A single claim transaction</li>
-          <li>Clear “to” contract (claim contract)</li>
-          <li>No approvals for unrelated tokens</li>
-          <li>Explorer shows token transfer/mint</li>
+        <h3>What a normal claim looks like</h3>
+        <ul>
+          <li>Single claim transaction</li>
+          <li>Status becomes success on explorer</li>
+          <li>Token transfer/mint appears in events</li>
+          <li>Balance updates after adding correct token</li>
         </ul>
       </div>
       <div class="mini">
-        <h3>What you should NOT approve</h3>
-        <ul class="checklist">
-          <li>Unlimited approvals to unknown contracts</li>
-          <li>“Permit” signatures you don’t understand</li>
-          <li>Requests to “import wallet” with seed phrase</li>
-          <li>Transactions that send your tokens elsewhere</li>
+        <h3>What to avoid (safe claiming)</h3>
+        <ul>
+          <li>Seed phrase requests (never)</li>
+          <li>Unexpected approvals for unrelated tokens</li>
+          <li>Signing unknown “permit” messages without understanding</li>
+          <li>Transactions sending your assets away</li>
         </ul>
       </div>
     </div>
 
     <div class="note">
-      <strong>If unsure:</strong> cancel the signature and verify the contract on explorer first. Missing a claim is better than draining a wallet.
+      <strong>If you’re unsure:</strong> cancel the signature and verify the contract address on the explorer first.
     </div>
   </section>
 
   <section class="card" id="deadlines">
-    <h2>Deadlines, Snapshots, Claim Windows: What They Mean (No Confusion)</h2>
+    <h2>Deadlines, Snapshots, and Claim Windows (No Confusion)</h2>
     <p>
-      Airdrops often use 3 key time concepts:
+      These three timestamps matter in almost every airdrop:
     </p>
     <ul>
-      <li><strong>Snapshot:</strong> a date/time when eligibility is calculated. Actions after snapshot usually don’t count.</li>
-      <li><strong>Announcement date:</strong> when the project publishes details.</li>
-      <li><strong>Claim window:</strong> a period when eligible users can claim. After it ends, claiming may be impossible.</li>
+      <li><strong>Snapshot:</strong> the cutoff for eligibility calculation.</li>
+      <li><strong>Announcement:</strong> when rules and allocations are published.</li>
+      <li><strong>Claim window:</strong> the period when claiming is allowed.</li>
     </ul>
     <p>
-      Scammers abuse “deadline panic” to push you into clicking. Always verify deadlines from official sources.
+      If you miss the claim window, you may permanently lose the allocation. Always rely on official announcements for deadlines.
     </p>
 
     <div class="note">
-      <strong>Rule:</strong> if someone says “claim ends in 2 hours” but you can’t find it on official channels, ignore it.
+      <strong>Operational rule:</strong> don’t claim “in a panic.” Claims remain available until the official window ends.
     </div>
   </section>
 
   <section class="card" id="wallet">
     <h2>Wallet Setup (zkSync Era): RPC, Chain ID, Explorer</h2>
     <p>
-      Many zkSync-related claims happen on zkSync Era. If you need to add the network manually, use verified parameters.
+      If the claim happens on zkSync Era, your wallet must have correct network settings. These values are commonly used in official zkSync resources.
     </p>
 
-    <table aria-label="zkSync Era network parameters for airdrop">
+    <table aria-label="zkSync Era network parameters">
       <thead>
         <tr>
           <th>Parameter</th>
@@ -663,63 +721,63 @@
         <tr class="highlight">
           <td>Network name</td>
           <td>zkSync Era Mainnet</td>
-          <td>Correct chain context</td>
+          <td>Correct network context</td>
         </tr>
         <tr>
           <td>RPC URL</td>
           <td><span class="mono">https://mainnet.era.zksync.io</span></td>
-          <td>Reliable baseline endpoint</td>
+          <td>Baseline endpoint</td>
         </tr>
         <tr class="highlight">
           <td>Chain ID</td>
           <td><span class="mono">324</span></td>
-          <td>Stops wrong-network mistakes</td>
+          <td>Prevents wrong-chain signing</td>
         </tr>
         <tr>
           <td>Currency symbol</td>
           <td>ETH</td>
-          <td>Gas token</td>
+          <td>Gas token on zkSync Era</td>
         </tr>
         <tr class="highlight">
           <td>Explorer</td>
           <td><span class="mono">https://explorer.zksync.io</span></td>
-          <td>Proof of tx + contracts</td>
+          <td>Proof of tx + contract addresses</td>
         </tr>
       </tbody>
     </table>
 
     <div class="note">
-      <strong>Safety:</strong> don’t use random “RPC lists” from Telegram. Use official zkSync docs and reputable network registries.
+      <strong>Tip:</strong> if a page asks to add a “new network” you’ve never heard of, stop and verify the domain + official docs first.
     </div>
   </section>
 
   <section class="card" id="proof">
-    <h2>Explorer Proof: How to Confirm You Received zkSync Airdrop Tokens</h2>
+    <h2>Explorer Proof: How to Verify You Received zkSync Airdrop Tokens</h2>
     <p>
-      Explorer verification is the strongest proof. Here’s what to check:
+      Explorer proof is the fastest way to confirm your claim. Use this checklist:
     </p>
     <ol>
-      <li>Open your <strong>wallet address</strong> on zkSync explorer.</li>
-      <li>Find the <strong>claim transaction</strong> (by hash or timestamp).</li>
+      <li>Open your address on zkSync explorer.</li>
+      <li>Find the claim transaction by time or tx hash.</li>
       <li>Confirm <strong>Status: Success</strong>.</li>
-      <li>Open the <strong>Token Transfer</strong> (or internal transfer) event.</li>
-      <li>Click the <strong>token contract</strong> and verify it is the official one.</li>
-      <li>Confirm your balance update in the token’s holder/balance view.</li>
+      <li>Open the event log / token transfers and identify the token contract.</li>
+      <li>Open the token contract page and confirm it is official.</li>
+      <li>Confirm your token balance (holders/balance view or token tab).</li>
     </ol>
 
     <div class="grid-2">
       <div class="mini">
         <h3>zkSync Era Explorer</h3>
         <p class="muted">
-          View address history, tx status, token transfers, contract addresses.
+          Verify tx status, token transfers, and contract addresses.
           <br>
           <a href="https://explorer.zksync.io/" target="_blank" rel="noopener nofollow">Open zkSync Explorer</a>
         </p>
       </div>
       <div class="mini">
-        <h3>Revoke approvals after claiming</h3>
+        <h3>Allowance cleanup</h3>
         <p class="muted">
-          Clean up allowances to reduce long-term risk.
+          Review and revoke token approvals after claiming.
           <br>
           <a href="https://revoke.cash/" target="_blank" rel="noopener nofollow">Open Revoke.cash</a>
         </p>
@@ -727,168 +785,165 @@
     </div>
 
     <div class="note" style="margin-top:1rem;">
-      <strong>For Vasya:</strong> if explorer shows you received tokens, but the wallet doesn’t show them — it’s a display issue, not “missing funds.”
+      <strong>Most common issue:</strong> explorer shows the token transfer, but the wallet doesn’t show the token. Fix = add token using the explorer-verified contract address.
     </div>
   </section>
 
-  <section class="card" id="scams">
-    <h2>Scams: How zkSync Airdrop Wallets Get Drained (and What to Do)</h2>
+  <section class="card" id="best-practices">
+    <h2>Best Practices: Safe Claiming Checklist (Fast + Practical)</h2>
     <div class="callout-grid">
       <div class="mini">
-        <h3>Top scam patterns</h3>
-        <ul class="checklist">
-          <li>Google ads “Claim zkSync” leading to fake domains</li>
-          <li>DM from “zkSync Support” with a link</li>
-          <li>Fake token airdropped to your wallet (bait)</li>
-          <li>“Permit” signature that gives spending power</li>
-          <li>Unlimited approvals on popular tokens</li>
+        <h3>Before you claim</h3>
+        <ul>
+          <li>Use a clean browser profile (wallet-only extensions)</li>
+          <li>Confirm domain from official zkSync sources</li>
+          <li>Keep ETH for gas (don’t go “all-in”)</li>
+          <li>Prefer hardware wallet for claims</li>
         </ul>
+        <div class="kpi-badges">
+          <span>Domain verify</span><span>Gas buffer</span><span>Hardware wallet</span>
+        </div>
       </div>
       <div class="mini">
-        <h3>If you clicked / signed something suspicious</h3>
-        <ul class="checklist">
-          <li>Disconnect wallet from the site immediately</li>
-          <li>Revoke allowances (start with valuable tokens)</li>
-          <li>Move funds to a new wallet if you suspect compromise</li>
-          <li>Scan your device for malware; remove risky extensions</li>
-          <li>Use hardware wallet for future claims</li>
+        <h3>After you claim</h3>
+        <ul>
+          <li>Verify tx + token transfer on explorer</li>
+          <li>Add token only via explorer-verified contract</li>
+          <li>Revoke unnecessary allowances</li>
+          <li>Save tx hash for your records</li>
         </ul>
+        <div class="kpi-badges">
+          <span>Explorer proof</span><span>Contract verify</span><span>Revoke</span>
+        </div>
       </div>
     </div>
 
     <div class="note">
-      <strong>Hard rule:</strong> never enter seed phrases on any website. Wallets only need you to sign in the wallet app/extension.
+      <strong>Beginner shortcut:</strong> if you do just (1) official link, (2) explorer proof, (3) revoke approvals — you’re already ahead of most people.
     </div>
   </section>
 
   <section class="card" id="troubleshooting">
-    <h2>Troubleshooting: Most Common zkSync Airdrop Problems (and Fixes)</h2>
+    <h2>Troubleshooting: Common Problems and Fixes</h2>
 
-    <h3>1) “Not eligible”</h3>
+    <h3>“Not eligible”</h3>
     <ul>
-      <li>Double-check you’re using the correct wallet address.</li>
-      <li>Confirm snapshot timing and criteria from official sources.</li>
-      <li>Don’t use random “eligibility fix” tools.</li>
+      <li>Confirm you used the correct wallet address (and correct account in the wallet).</li>
+      <li>Check if the snapshot was before your activity.</li>
+      <li>Some wallets are filtered by anti-sybil rules; official sources are the only authority.</li>
     </ul>
 
-    <h3>2) “Claim button missing / page errors”</h3>
+    <h3>“Claim transaction failed / reverted”</h3>
     <ul>
-      <li>Clear site data, disable non-wallet extensions, try another browser profile.</li>
-      <li>Switch RPC endpoint (only reputable/official).</li>
-      <li>Check official status updates for downtime/maintenance.</li>
+      <li>Insufficient gas or temporary network congestion.</li>
+      <li>Try again once after verifying official claim page and having enough ETH.</li>
+      <li>If failures persist, check official status updates and wait.</li>
     </ul>
 
-    <h3>3) “Transaction pending for long time”</h3>
+    <h3>“Claim succeeded but tokens not showing”</h3>
     <ul>
-      <li>Check status on explorer (UI can lag).</li>
-      <li>Ensure you have enough ETH for gas; don’t spam retries.</li>
-      <li>If it failed, re-try once on the official page.</li>
+      <li>Use explorer to confirm token transfer and contract address.</li>
+      <li>Add the token manually using the explorer-verified contract.</li>
+      <li>Refresh the wallet, restart browser, or switch RPC (reputable only).</li>
     </ul>
 
-    <h3>4) “Claim succeeded but tokens not visible”</h3>
+    <h3>“Wrong wallet / wrong network”</h3>
     <ul>
-      <li>Verify token transfer on explorer and copy the token contract address.</li>
-      <li>Add token manually in wallet using the explorer-verified contract.</li>
-      <li>Refresh wallet UI or re-import token list (if supported).</li>
+      <li>Switch the wallet network to zkSync Era (if claim occurs on Era).</li>
+      <li>Verify the address on explorer; the chain context matters.</li>
     </ul>
 
     <div class="note">
-      <strong>Golden rule:</strong> explorer success + token transfer = you received it. Everything else is UI.
+      <strong>Golden rule:</strong> if explorer shows success + token transfer to your address, your tokens are almost never “gone.”
     </div>
   </section>
 
   <section class="eeat" id="eeat" aria-labelledby="eeat-title">
     <h2 id="eeat-title">zkSync Airdrop Authoritative Sources & References (EEAT)</h2>
-    <p>Unique, reputable references for official verification, claim safety, and anti-scam education:</p>
+    <p class="tiny">Unique, reputable references to verify official info, understand claims, and follow best security practices:</p>
 
     <h3>Official zkSync (primary truth)</h3>
     <ul>
-      <li><a href="https://zksync.io/" target="_blank" rel="noopener nofollow">zkSync — Official website</a></li>
+      <li><a href="https://zksync.io/" target="_blank" rel="noopener nofollow">zkSync — official website</a></li>
       <li><a href="https://docs.zksync.io/" target="_blank" rel="noopener nofollow">zkSync Docs — official documentation</a></li>
-      <li><a href="https://portal.zksync.io/" target="_blank" rel="noopener nofollow">zkSync Portal — official portal/bridge</a></li>
+      <li><a href="https://portal.zksync.io/" target="_blank" rel="noopener nofollow">zkSync Portal — official portal</a></li>
       <li><a href="https://explorer.zksync.io/" target="_blank" rel="noopener nofollow">zkSync Era Explorer — on-chain verification</a></li>
+      <li><a href="https://github.com/matter-labs" target="_blank" rel="noopener nofollow">Matter Labs GitHub — core repos (verification)</a></li>
     </ul>
 
-    <h3>Security education (unique set)</h3>
+    <h3>Wallet + signing safety (unique set)</h3>
     <ul>
-      <li><a href="https://www.cisa.gov/" target="_blank" rel="noopener nofollow">CISA — cybersecurity hygiene and phishing guidance</a></li>
-      <li><a href="https://www.ncsc.gov.uk/" target="_blank" rel="noopener nofollow">NCSC — phishing and account security advice</a></li>
-      <li><a href="https://www.immunefi.com/learn/" target="_blank" rel="noopener nofollow">Immunefi Learn — web3 security basics</a></li>
+      <li><a href="https://support.metamask.io/" target="_blank" rel="noopener nofollow">MetaMask Support — security and signing prompts</a></li>
+      <li><a href="https://www.ledger.com/academy" target="_blank" rel="noopener nofollow">Ledger Academy — wallet security fundamentals</a></li>
+      <li><a href="https://revoke.cash/" target="_blank" rel="noopener nofollow">Revoke.cash — approvals and allowances management</a></li>
     </ul>
 
-    <h3>On-chain verification tooling (unique set)</h3>
+    <h3>Phishing defense + web security (unique set)</h3>
     <ul>
-      <li><a href="https://www.blocknative.com/" target="_blank" rel="noopener nofollow">Blocknative — transaction lifecycle education</a></li>
-      <li><a href="https://dune.com/" target="_blank" rel="noopener nofollow">Dune — analytics dashboards (informational)</a></li>
-      <li><a href="https://www.ledger.com/academy" target="_blank" rel="noopener nofollow">Ledger Academy — wallet security and signing safety</a></li>
-    </ul>
-
-    <h3>Allowances / approvals management</h3>
-    <ul>
-      <li><a href="https://revoke.cash/" target="_blank" rel="noopener nofollow">Revoke.cash — revoke token approvals</a></li>
-      <li><a href="https://etherscan.io/tokenapprovalchecker" target="_blank" rel="noopener nofollow">Etherscan Token Approval Checker — allowance review on Ethereum</a></li>
-      <li><a href="https://support.metamask.io/" target="_blank" rel="noopener nofollow">MetaMask Support — dealing with scams and suspicious signatures</a></li>
+      <li><a href="https://owasp.org/" target="_blank" rel="noopener nofollow">OWASP — security best practices</a></li>
+      <li><a href="https://www.ftc.gov/scams" target="_blank" rel="noopener nofollow">FTC — scam and phishing guidance</a></li>
+      <li><a href="https://www.cloudflare.com/learning/security/phishing-attack/" target="_blank" rel="noopener nofollow">Cloudflare Learning — phishing explained</a></li>
     </ul>
 
     <div class="note">
-      <strong>About:</strong> Prepared by Crypto Finance Experts as a plain-language, security-first knowledge base for <em>zkSync Airdrop</em>.
+      <strong>About:</strong> Prepared by Crypto Finance Experts as a security-first, explorer-verifiable knowledge base for <em>zkSync Airdrop</em>.
     </div>
   </section>
 
   <section class="card faq-section" aria-labelledby="faq">
-    <h2 id="faq">zkSync Airdrop FAQ (Plain Language)</h2>
+    <h2 id="faq">zkSync Airdrop FAQ</h2>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f1" id="b1">
-        <h3>How to check zkSync airdrop eligibility?</h3><span class="faq-plus">+</span>
+        <h3>What is zkSync Airdrop?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f1" class="faq-content" role="region" aria-labelledby="b1">
-        <p>Open zkSync official sources, follow the official eligibility link, connect the correct wallet, and trust explorer proof. Don’t use random checkers that ask you to connect.</p>
+        <p>A token distribution connected to the zkSync ecosystem. Eligibility is usually calculated from past wallet activity before a snapshot time.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f2" id="b2">
-        <h3>How to claim zkSync airdrop safely?</h3><span class="faq-plus">+</span>
+        <h3>How to check zkSync airdrop eligibility?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f2" class="faq-content" role="region" aria-labelledby="b2">
-        <p>Claim only on the official page, read what you sign, avoid unlimited approvals, save the tx hash, and verify the token transfer on the zkSync explorer.</p>
+        <p>Start from official zkSync links, open the official checker (if provided), connect the correct wallet address, and read the eligibility result. Verify any claim result on explorer.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f3" id="b3">
-        <h3>Why do people lose money on airdrops?</h3><span class="faq-plus">+</span>
+        <h3>How to claim zkSync airdrop?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f3" class="faq-content" role="region" aria-labelledby="b3">
-        <p>Mostly phishing (fake claim pages), malicious approvals/permits, and fake token contracts. The fix is official sources + explorer verification + limited approvals.</p>
+        <p>Open the official claim page, connect wallet, submit the claim transaction, copy the tx hash, then confirm success and token transfer on zkSync explorer.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f4" id="b4">
-        <h3>What if tokens don’t show after a successful claim?</h3><span class="faq-plus">+</span>
+        <h3>Why am I not eligible even if I used zkSync?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f4" class="faq-content" role="region" aria-labelledby="b4">
-        <p>Verify the transfer on the explorer and add the token using the explorer-verified contract address. Wallet UI caching is common.</p>
+        <p>Common reasons: activity happened after snapshot, activity was minimal, wallet behavior triggered anti-sybil filters, or you checked a different wallet address than the one you used.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f5" id="b5">
-        <h3>Should I use my main wallet to claim?</h3><span class="faq-plus">+</span>
+        <h3>Claim succeeded but tokens don’t show in my wallet — what now?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f5" class="faq-content" role="region" aria-labelledby="b5">
-        <p>Safer approach: use a hardware wallet or a separate wallet for claims, keep approvals limited, and revoke allowances after the claim.</p>
+        <p>Use explorer proof: confirm token transfer and the token contract address. Add the token manually using the explorer-verified contract. Wallet UIs often lag.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f6" id="b6">
-        <h3>What is the zkSync Era chain ID (for claims on Era)?</h3><span class="faq-plus">+</span>
+        <h3>What is the zkSync Era chain ID?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f6" class="faq-content" role="region" aria-labelledby="b6">
-        <p>The commonly used zkSync Era Mainnet chain ID is <strong>324</strong>. Verify with zkSync docs and reputable network registries.</p>
+        <p>The commonly used zkSync Era Mainnet chain ID is <strong>324</strong>. Verify using official zkSync documentation if you are unsure.</p>
       </div>
     </div>
 
